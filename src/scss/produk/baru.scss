@@ -1,0 +1,204 @@
+.new-product-page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: rgba($color: #000000, $alpha: .5);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease;
+    padding-top: 100px;
+    visibility: hidden;
+    opacity: 0;
+
+    .new-product-form {
+        -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+        background-color: white;
+        h1 {
+            border-bottom: 1px solid rgb(141, 141, 141);
+            display: block;
+
+        }
+        .form-group {
+            width: 100%;
+            label {
+                display: block;
+            }
+            input {
+                width: 100%;
+                outline: none;
+                border: 1px solid rgb(141, 141, 141);
+            }
+            #check-as-spending {
+                cursor: pointer;
+                border: 1px solid rgb(141, 141, 141);
+            }
+            .satuan-btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                outline: none;
+                cursor: pointer;
+                border: 1px solid rgb(141, 141, 141);
+                &:hover {
+                    opacity: .8;
+                }
+                .satuan-label {
+                    color: rgb(121, 121, 121);
+                }
+                .satuan-icon {
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    background-image: url(../../../assets/icons/bottom-arrow.png);
+                }
+                .satuan-icon-active {
+                    background-image: url(../../../assets/icons/top-arrow.png);
+                }
+            }
+            .satuan-items {
+                overflow-x: hidden;
+                overflow-y: scroll;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.20s all ease;
+                -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+                background-color: white;
+                &::-webkit-scrollbar { width: 0px; }
+                p {
+                    display: block;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: rgb(241, 241, 241);
+                    }
+                    &:active {
+                        background-color: rgb(220, 248, 248);
+                    }
+                }
+            }
+            .satuan-items-active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .form-btns {
+            display: flex;
+            justify-content: space-between;
+            button {
+                width: 49%;
+                color: white;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                background: none;
+                &:hover {
+                    opacity: .9;
+                }
+            }
+            .new-product-save-btn {
+                background: rgb(91, 160, 145);
+            }
+            .new-product-cancel-btn {
+                background: rgb(104, 149, 167);
+            }
+        }
+    }
+}
+.new-product-page-active {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 0px;
+}
+
+@media (min-width: 1000px) 
+{
+    .new-product-page {
+        .new-product-form {
+            padding: 10px;
+            border-radius: 7px;
+            width: 300px;
+            min-width: 300px;
+            h1 {
+                font-size: 17px;
+                line-height: 17px;
+                padding-bottom: 6px;
+                margin-bottom: 10px;
+            }
+            .form-group {
+                width: 100%;
+                label {
+                    font-size: 15px;
+                    line-height: 15px;
+                    padding-bottom: 5px;
+                }
+                input {
+                    font-size: 15px;
+                    height: 30px;
+                    min-height: 30px;
+                    padding: 0px 5px 0px 5px;
+                    margin-bottom: 7px;
+                }
+                #check-as-spending {
+                    height: 15px;
+                    min-height: 15px;
+                    width: 15px;
+                    min-width: 15px;
+                    padding: unset;
+                    border-radius: 3px;
+                    margin-right: 7px;
+                    margin-bottom: 20px;
+                }
+                .satuan-btn {
+                    height: 30px;
+                    min-height: 30px;
+                    margin-bottom: 10px;
+                    padding: 0px 5px 0px 5px;
+                    .satuan-label {
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                    .satuan-icon {
+                        height: 30px;
+                        min-height: 30px;
+                        width: 30px;
+                        min-width: 30px;
+                        background-size: 10px 10px;
+                    }
+                }
+                .satuan-items {
+                    width: 280px;
+                    min-width: 280px;
+                    height: 110px;
+                    min-height: 110px;
+                    border-radius: 7px;
+                    padding: 10px;
+                    transform: translateY(-4px);
+                    p {
+                        font-size: 14px;
+                        min-height: 14px;
+                        padding: 5px;
+                    }
+                }
+            }
+            .form-btns {
+                button {
+                    height: 28px;
+                    min-height: 28px;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    &:active {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

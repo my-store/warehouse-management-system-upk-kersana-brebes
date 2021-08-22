@@ -1,0 +1,120 @@
+@font-face {
+    font-family: mandhy;
+    src: url(../../assets/fonts/mandhy/Mandhy.ttf);
+}
+
+@font-face {
+    font-family: ubuntu-regular;
+    src: url(../../assets/fonts/ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: ubuntu-light;
+    src: url(../../assets/fonts/ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: ubuntu-bold;
+    src: url(../../assets/fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(107, 107, 107);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: ubuntu-light;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    #root {
+        width: 100%;
+        .pages {
+            width: 100%;
+            .top-page {
+                width: 100%;
+                .office {
+                    display: block;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-bottom: 10px;
+                    .office-brand {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        .office-logo {
+                            display: block;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-image: url(../../assets/icons/logo-toko.png);
+                        }
+                        .office-name {
+                            font-family: mandhy;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .office-detail {
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .bottom-page {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) 
+{
+    body {
+        #root {
+            .pages {
+                .top-page {
+                    .office {
+                        .office-brand {
+                            .office-logo {
+                                height: 65px;
+                                min-height: 65px;
+                                width: 65px;
+                                min-width: 65px;
+                                background-size: contain;
+                            }
+                            .office-name {
+                                font-size: 35px;
+                                line-height: 35px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                        .office-detail {
+                            p {                                
+                                font-size: 17px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+                .bottom-page {}
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.income-page {
+    .income-table {
+        border: 1px solid rgb(141, 141, 141);
+        h1 {
+            border-bottom: 1px solid rgb(141, 141, 141);
+            display: flex;
+            justify-content: space-between;
+            .income-btn {
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../../../assets/icons/bottom-arrow.png);
+                &:hover {
+                    opacity: .7;
+                }
+            }
+            .income-btn-active {
+                background-image: url(../../../assets/icons/top-arrow.png);
+            }
+        }
+        .income-detail {
+            color: rgb(99, 99, 99);
+            background: rgb(220, 252, 223);
+            .spacer {
+                display: block;
+            }
+        }
+        .income-list {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            background: white;
+            transition: 0.20s all ease;
+            -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+            p {
+                display: block;
+                color: grey;
+                overflow: hidden;
+                border-bottom: 1px solid rgb(204, 204, 204);
+            }
+        }
+        .income-list-active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 1000px) 
+{
+    .income-page {
+        padding: 10px 0px 0px 7px;
+        .income-table {
+            padding: 10px 0px 10px 0px;
+            width: 200px;
+            min-width: 200px;
+            padding: 5px;
+            h1 {
+                font-size: 17px;
+                height: 28px;
+                min-height: 28px;
+                line-height: 23px;
+                margin-bottom: 5px;
+                .income-btn {
+                    background-size: 12px 12px;
+                    height: 26px;
+                    min-height: 26px;
+                    width: 26px;
+                    min-width: 26px;
+                    &:active {
+                        background-size: 10px 10px;
+                    }
+                }
+            }
+            .income-detail {
+                padding: 7px 7px 10px 7px;
+                p {
+                    font-size: 14.50px;
+                    line-height: 14.50px;
+                    padding-bottom: 5px;
+                }
+                .spacer {
+                    height: 12.50px;
+                    min-height: 12.50px;
+                }
+                h3 {
+                    font-family: ubuntu-regular;
+                    font-size: 22px;
+                }
+            }
+            .income-list {
+                height: 172px;
+                min-height: 172px;
+                width: 187px;
+                min-width: 187px;
+                border-radius: 5px;
+                padding: 10px;
+                transform: translateY(-0px);
+                p {
+                    font-size: 14px;
+                    height: 25px;
+                    min-height: 25px;
+                    margin-bottom: 5px;
+                }
+            }
+            .income-list-active {
+                transform: translateY(-175px);
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.transaction-page 
+{
+    .transaction-table 
+    {
+        .trs-beli-form {
+            width: 100%;
+            .form-group {
+                input {
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid rgb(141, 141, 141);
+                }
+                textarea {
+                    outline: none;
+                    width: 100%;
+                    resize: none;
+                    border: 1px solid rgb(141, 141, 141);
+                }
+            }
+            .form-btns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button {
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    color: white;
+                    &:hover {
+                        opacity: .9;
+                    }
+                }
+                .checkout-y-btn {
+                    background: rgb(91, 160, 145);
+                }
+                .checkout-n-btn {
+                    background: rgb(104, 149, 167);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) 
+{
+    .transaction-page 
+    {
+        .transaction-table 
+        {
+            .trs-beli-form {
+                padding-top: 10px;
+                .form-group {
+                    input {
+                        font-size: 15px;
+                        height: 30px;
+                        min-height: 30px;
+                        padding: 0px 5px 0px 5px;
+                        margin-bottom: 6px;
+                    }
+                    textarea {
+                        font-size: 15px;
+                        padding: 5px;
+                        height: 100px;
+                        min-height: 100px;
+                        margin-bottom: 3px;
+                    }
+                }
+                .form-btns {
+                    button {
+                        font-size: 13.65px;
+                        height: 28px;
+                        min-height: 28px;
+                        &:active {
+                            font-size: 12.65px;
+                        }
+                    }
+                    .checkout-y-btn {
+                        width: 70%;
+                    }
+                    .checkout-n-btn {
+                        width: 30%;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
