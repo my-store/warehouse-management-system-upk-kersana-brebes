@@ -1,14 +1,10 @@
 # Sistem Pembukuan Milik UPK Kersana/ Kradenan
 Aplikasi ini berbasis desktop yang dibangun menggunakan bahasa pemrograman JavaScript (ElectronJS), aplikasi ini menggunakan NeDB (versi LITE dari MongoDB) sebagai penyimpanan data dan hanya dapat digunakan di Laptop/ PC dengan sistem:
-\
-* 1. Windows 32/64 bit
-\
-* 2. Proc min Intel Core2Dou
-\
-* 3. RAM min 2GB
-\
-* 4. HDD min 100GB (kosong)
-\
+
+* Windows 32/64 bit
+* Proc min Intel Core2Dou
+* RAM min 2GB
+* HDD min 100GB (kosong)
 
 ### Helpers
 * String
