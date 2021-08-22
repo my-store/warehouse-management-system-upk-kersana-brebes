@@ -1,4 +1,4 @@
-# Sistem Pembukuan Milik UPK Kersana/ Kradenan
+# Warehouse Management System Milik UPK Kersana/ Kradenan
 Aplikasi ini berbasis desktop yang dibangun menggunakan bahasa pemrograman JavaScript (ElectronJS), aplikasi ini menggunakan NeDB (versi LITE dari MongoDB) sebagai penyimpanan data dan hanya dapat digunakan di Laptop/ PC dengan sistem:
 
 * Windows 32/64 bit
